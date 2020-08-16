@@ -2,7 +2,7 @@
 {{- $fullName := include "cloudserver.fullname" . -}}
 {{- $servicePort := .Values.api.service.port -}}
 {{- $ingressPath := .Values.api.ingress.path -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}

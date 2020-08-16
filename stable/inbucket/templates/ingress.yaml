@@ -1,7 +1,7 @@
 {{- if .Values.ingress.enabled }}
 {{- $fullName := include "inbucket.fullname" . -}}
 {{- $path := .Values.ingress.path -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
 {{- if .Values.ingress.annotations }}

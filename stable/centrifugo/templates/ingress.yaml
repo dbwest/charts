@@ -1,7 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $serviceName := include "centrifugo.fullname" . -}}
 {{- $servicePort := .Values.service.port -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ include "centrifugo.fullname" . }}

@@ -1,7 +1,7 @@
 {{- $ingress := .Values.Zeppelin.Ingress -}}
 {{- $fullName := include "zeppelin-fullname" . -}}
 {{- if $ingress.Enabled }}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ template "zeppelin-fullname" . }}

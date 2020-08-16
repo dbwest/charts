@@ -35,9 +35,9 @@ image:
 ##
 # fullnameOverride:
 
-## For Kubernetes v1.4, v1.5 and v1.6, use 'extensions/v1beta1'
+## For Kubernetes v1.4, v1.5 and v1.6, use 'apps/v1'
 ## For Kubernetes v1.7, use 'networking.k8s.io/v1'
-networkPolicyApiVersion: extensions/v1beta1
+networkPolicyApiVersion: apps/v1
 
 ## Configure the ingress resource that allows you to access the
 ## ownCloud installation. Set up the URL

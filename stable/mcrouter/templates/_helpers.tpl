@@ -20,7 +20,7 @@ Return the appropriate apiVersion for daemonset.
 */}}
 {{- define "daemonset.apiVersion" -}}
 {{- if semverCompare "<1.9-0" .Capabilities.KubeVersion.GitVersion -}}
-{{- print "extensions/v1beta1" -}}
+{{- print "apps/v1" -}}
 {{- else if semverCompare "^1.9-0" .Capabilities.KubeVersion.GitVersion -}}
 {{- print "apps/v1" -}}
 {{- end -}}
@@ -31,7 +31,7 @@ Return the appropriate apiVersion for statefulset.
 */}}
 {{- define "statefulset.apiVersion" -}}
 {{- if semverCompare "<1.9-0" .Capabilities.KubeVersion.GitVersion -}}
-{{- print "extensions/v1beta1" -}}
+{{- print "apps/v1" -}}
 {{- else if semverCompare "^1.9-0" .Capabilities.KubeVersion.GitVersion -}}
 {{- print "apps/v1" -}}
 {{- end -}}

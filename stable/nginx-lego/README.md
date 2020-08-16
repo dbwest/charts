@@ -7,7 +7,7 @@
 To use this ingress contoller add the following annotations to the `ingress` resources you would like to route through it:
 
 ```yaml
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   namespace: foo

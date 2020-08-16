@@ -78,7 +78,7 @@ The chart label string contains the version, so if it is specified, whenever the
 
 #### Fixing Selectors
 
-##### For Deployments, StatefulSets, DaemonSets apps/v1beta1 or extensions/v1beta1
+##### For Deployments, StatefulSets, DaemonSets apps/v1beta1 or apps/v1
 
 - If it does not specify `spec.selector.matchLabels`, set it
 - Remove `helm.sh/chart` label in `spec.selector.matchLabels` if it exists
@@ -282,7 +282,7 @@ ingress:
 {{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1beta1" }}
 apiVersion: networking.k8s.io/v1beta1
 {{ else }}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 {{ end -}}
 kind: Ingress
 metadata:

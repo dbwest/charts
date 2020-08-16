@@ -181,7 +181,7 @@ Return the appropriate apiVersion for deployment.
 */}}
 {{- define "osclass.deployment.apiVersion" -}}
 {{- if semverCompare "<1.14-0" .Capabilities.KubeVersion.GitVersion -}}
-{{- print "extensions/v1beta1" -}}
+{{- print "apps/v1" -}}
 {{- else -}}
 {{- print "apps/v1" -}}
 {{- end -}}

@@ -11,7 +11,7 @@ kubectl create namespace opa-example
 # 2. Create an Ingress in the "opa-example" namespace that complies with the policy.
 
 cat > ingress-ok.yaml <<EOF
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: ingress-ok
@@ -30,7 +30,7 @@ kubectl -n opa-example create -f ingress-ok.yaml
 # 3. Try to create an Ingress in the "opa-example" namespace that violates the policy.
 
 cat > ingress-bad.yaml <<EOF
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: ingress-ok

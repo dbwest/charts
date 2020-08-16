@@ -75,7 +75,7 @@ Return the appropriate apiVersion for ingress.
 */}}
 {{- define "drone.ingress.apiVersion" -}}
 {{- if semverCompare "<1.14-0" .Capabilities.KubeVersion.GitVersion -}}
-{{- print "extensions/v1beta1" -}}
+{{- print "apps/v1" -}}
 {{- else if semverCompare "^1.14-0" .Capabilities.KubeVersion.GitVersion -}}
 {{- print "networking.k8s.io/v1beta1" -}}
 {{- end -}}

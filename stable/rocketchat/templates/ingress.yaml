@@ -1,6 +1,6 @@
 {{- $ingress := .Values.ingress -}}
 {{- if $ingress.enabled -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ template "rocketchat.fullname" . }}

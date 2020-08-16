@@ -27,5 +27,5 @@ webhooks:
       service:
         namespace: {{ .Release.Namespace }}
         name: {{ template "nginx-ingress.controller.fullname" . }}-admission
-        path: /extensions/v1beta1/ingresses
+        path: /apps/v1/ingresses
 {{- end }}

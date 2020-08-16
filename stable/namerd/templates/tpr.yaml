@@ -1,6 +1,6 @@
 metadata:
   name: d-tab.l5d.io
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: ThirdPartyResource
 description: stores dtabs used by Buoyant's `namerd` service
 versions:

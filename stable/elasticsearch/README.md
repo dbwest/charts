@@ -255,7 +255,7 @@ Create StorageClass for SSD-PD
 ```
 $ kubectl create -f - <<EOF
 kind: StorageClass
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: ssd
 provisioner: kubernetes.io/gce-pd

@@ -1,7 +1,7 @@
 {{- if and .Values.pg.enabled .Values.pg.ingress.enabled -}}
 {{- $fullName := include "hl-composer.fullname" . -}}
 {{- $ingressPath := .Values.pg.ingress.path -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}-pg

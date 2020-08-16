@@ -1,7 +1,7 @@
 {{- if .Values.ingress.enabled }}
 {{- $ingressPath := .Values.ingress.path -}}
 {{- $fullName := printf "%s-zeppelin" .Release.Name -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}

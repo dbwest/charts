@@ -2,7 +2,7 @@
 {{- $fullName := include "home-assistant.fullname" . -}}
 {{- $servicePort := .Values.appdaemon.service.port -}}
 {{- $ingressPath := .Values.appdaemon.ingress.path -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}-appdaemon

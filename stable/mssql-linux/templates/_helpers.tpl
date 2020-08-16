@@ -54,6 +54,6 @@ Return the appropriate apiVersion for deployment.
 {{- if semverCompare ">=1.9-0" .Capabilities.KubeVersion.GitVersion -}}
 {{- print "apps/v1" -}}
 {{- else -}}
-{{- print "extensions/v1beta1" -}}
+{{- print "apps/v1" -}}
 {{- end -}}
 {{- end -}}

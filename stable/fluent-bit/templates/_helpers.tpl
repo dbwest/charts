@@ -71,7 +71,7 @@ Return the appropriate apiVersion for DaemonSet.
 */}}
 {{- define "daemonSet.apiVersion" -}}
 {{- if semverCompare "<1.9-0" .Capabilities.KubeVersion.GitVersion -}}
-{{- print "extensions/v1beta1" -}}
+{{- print "apps/v1" -}}
 {{- else -}}
 {{- print "apps/v1" -}}
 {{- end -}}

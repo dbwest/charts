@@ -2,7 +2,7 @@
 {{- if .Values.service.enabled }}
 {{- $serviceName := include "apm-server.fullname" . -}}
 {{- $servicePort := .Values.service.port -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   labels:

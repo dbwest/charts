@@ -1,7 +1,7 @@
 {{- if .Values.linkerd.ingress.enabled -}}
 {{- $globalContext := . -}}
 {{- $servicePort := .Values.linkerd.httpPort -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   annotations:

@@ -2,7 +2,7 @@
 {{- $serviceName := include "metabase.fullname" . -}}
 {{- $servicePort := .Values.service.externalPort -}}
 {{- $ingressPath := .Values.ingress.path -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ template "metabase.fullname" . }}

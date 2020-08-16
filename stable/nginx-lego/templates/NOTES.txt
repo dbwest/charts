@@ -7,7 +7,7 @@ This chart runs an nginx-ingress-controller  {{- if .Values.lego.enabled }}  and
 
 EXAMPLE INGRESS YAML:
 
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   namespace: foo

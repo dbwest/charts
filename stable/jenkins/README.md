@@ -268,7 +268,7 @@ The following tables list the configurable parameters of the Jenkins chart and t
 | Parameter                         | Description                          | Default                                   |
 | --------------------------------- | ------------------------------------ | ----------------------------------------- |
 | `master.ingress.enabled`          | Enables ingress                      | `false`                                   |
-| `master.ingress.apiVersion`       | Ingress API version                  | `extensions/v1beta1`                      |
+| `master.ingress.apiVersion`       | Ingress API version                  | `apps/v1`                      |
 | `master.ingress.hostName`         | Ingress host name                    | Not set                                   |
 | `master.ingress.annotations`      | Ingress annotations                  | `{}`                                      |
 | `master.ingress.labels`           | Ingress labels                       | `{}`                                      |
@@ -280,7 +280,7 @@ The following tables list the configurable parameters of the Jenkins chart and t
 | Parameter                         | Description                          | Default                                   |
 | --------------------------------- | ------------------------------------ | ----------------------------------------- |
 | `master.backendconfig.enabled`     | Enables backendconfig     | `false`              |
-| `master.backendconfig.apiVersion`  | backendconfig API version | `extensions/v1beta1` |
+| `master.backendconfig.apiVersion`  | backendconfig API version | `apps/v1` |
 | `master.backendconfig.name`        | backendconfig name        | Not set              |
 | `master.backendconfig.annotations` | backendconfig annotations | `{}`                 |
 | `master.backendconfig.labels`      | backendconfig labels      | `{}`                 |

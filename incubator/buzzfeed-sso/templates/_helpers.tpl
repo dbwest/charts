@@ -49,6 +49,6 @@ Return the apiVersion of ingress.
 {{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1beta1" -}}
     {{- print "networking.k8s.io/v1beta1" -}}
 {{- else -}}
-    {{- print "extensions/v1beta1" -}}
+    {{- print "apps/v1" -}}
 {{- end -}}
 {{- end -}}

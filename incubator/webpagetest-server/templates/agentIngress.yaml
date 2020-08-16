@@ -3,7 +3,7 @@
 {{- $servicePort := .Values.service.externalPort -}}
 {{- $rejectSvcName := .Values.agentIngress.rejectServiceName -}}
 {{- $rejectSvcPort := .Values.agentIngress.rejectServicePort -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: {{ template "webpagetest.fullname" . }}-agent

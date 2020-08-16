@@ -1,7 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $serviceName := printf "%s-rpc" (include "burrow.fullname" .) -}}
 {{- $servicePort := .Values.service.rpc.port -}}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   labels:

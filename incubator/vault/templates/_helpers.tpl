@@ -49,7 +49,7 @@ Return the apiVersion of deployment.
 {{- if .Capabilities.APIVersions.Has "apps/v1" -}}
     {{- print "apps/v1" -}}
 {{- else -}}
-    {{- print "extensions/v1beta1" -}}
+    {{- print "apps/v1" -}}
 {{- end -}}
 {{- end -}}
 
@@ -60,7 +60,7 @@ Return the apiVersion of ingress.
 {{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1beta1" -}}
     {{- print "networking.k8s.io/v1beta1" -}}
 {{- else -}}
-    {{- print "extensions/v1beta1" -}}
+    {{- print "apps/v1" -}}
 {{- end -}}
 {{- end -}}
 
@@ -71,6 +71,6 @@ Return the apiVersion of networkPolicy.
 {{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1" -}}
     {{- print "networking.k8s.io/v1" -}}
 {{- else -}}
-    {{- print "extensions/v1beta1" -}}
+    {{- print "apps/v1" -}}
 {{- end -}}
 {{- end -}}
